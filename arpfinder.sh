@@ -54,6 +54,6 @@ if [[ $PHY ]]; then
 	LTWOINDEX=`$SNMPGET -OQ -OU -Ov -v 2c -c $COMM $ROUTER $DOT1DPORT$HEXOID`
 	INTDESC=`$SNMPGET -OQ -OU -Ov -v 2c -c $COMM $ROUTER $IFDESC.$LTWOINDEX`
 	INTALIAS=`$SNMPGET -OQ -OU -Ov -v 2c -c $COMM $ROUTER $IFALIAS.$LTWOINDEX`
-	echo "The description on the layer 3 interface is \"$INTDESC\""
-	echo "The alias on the layer 3 interface is \"$INTALIAS\""
+	echo "The description on the layer 2 interface is \"$INTDESC\""
+	echo "The alias on the layer 2 interface is \"$INTALIAS\""
 fi
